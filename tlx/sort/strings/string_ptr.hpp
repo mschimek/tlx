@@ -130,6 +130,11 @@ public:
         assert(i < size());
         return lcp_[i];
     }
+    
+    // added by me (Matthias)
+    LcpType* get_lcp() const {
+      return lcp_;
+    }
 
     //! set the i-th lcp to v and check its value
     void set_lcp(size_t i, const LcpType& v) const {
